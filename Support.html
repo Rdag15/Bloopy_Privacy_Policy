@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloopy - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            color: #1a1a2e;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a90d9;
+        }
+        h3 {
+            color: #333;
+            margin: 20px 0 10px 0;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #4a90d9 0%, #357abd 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 10px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(74, 144, 217, 0.4);
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .faq-answer {
+            color: #666;
+        }
+        ul {
+            margin: 10px 0 15px 20px;
+            color: #555;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .requirements {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .links a {
+            color: #4a90d9;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            color: #888;
+            margin-top: 40px;
+            padding: 20px;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bloopy Support</h1>
+            <p class="subtitle">Peg-Popping Puzzle Fun</p>
+        </header>
+
+        <!-- Contact Section -->
+        <div class="card">
+            <h2>Contact Us</h2>
+            <p>Have a question, found a bug, or want to share feedback? We'd love to hear from you!</p>
+            <a href="mailto:Bloopy@12td.com?subject=Bloopy%20Support%20Request" class="contact-btn">Email Support</a>
+            <p style="margin-top: 15px; font-size: 0.9rem; color: #888;">
+                Email: <strong>Bloopy@12td.com</strong><br>
+                We typically respond within 24-48 hours.
+            </p>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="card">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I play Bloopy?</div>
+                <div class="faq-answer">
+                    Drag to aim your ball, then release to launch. Clear all the orange pegs to win the level!
+                    You have a limited number of balls, so aim carefully and use bounces strategically.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What do the different colored pegs do?</div>
+                <div class="faq-answer">
+                    <ul>
+                        <li><strong>Orange pegs:</strong> Your main targets - clear all of these to win</li>
+                        <li><strong>Blue pegs:</strong> Regular pegs that give points</li>
+                        <li><strong>Green pegs:</strong> Special pegs that give you an extra ball</li>
+                        <li><strong>Purple pegs:</strong> Power-up pegs that activate your selected ability</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do power-ups work?</div>
+                <div class="faq-answer">
+                    Before starting a level, select a power-up from the main menu. When your ball hits a purple
+                    power-up peg during gameplay, your selected ability activates:
+                    <ul>
+                        <li><strong>Multiball:</strong> Splits into multiple balls</li>
+                        <li><strong>Fireball:</strong> Burns through pegs without bouncing</li>
+                        <li><strong>Big Ball:</strong> Grows larger to hit more pegs</li>
+                        <li><strong>Explosive:</strong> Creates chain reactions that clear nearby pegs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I unlock new power-ups?</div>
+                <div class="faq-answer">
+                    Progress through the campaign levels to unlock additional power-ups. Each power-up
+                    is unlocked after completing specific levels.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I create my own levels?</div>
+                <div class="faq-answer">
+                    Yes! Bloopy includes a built-in level editor. From the main menu, tap the "Editor" button
+                    to design your own puzzles. You can place pegs, add obstacles, and test your creations.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Does Bloopy require an internet connection?</div>
+                <div class="faq-answer">
+                    No! Bloopy works completely offline. Play anywhere, anytime - no internet required.
+                </div>
+            </div>
+        </div>
+
+        <!-- Troubleshooting Section -->
+        <div class="card">
+            <h2>Troubleshooting</h2>
+
+            <h3>App won't launch or crashes</h3>
+            <ul>
+                <li>Make sure your device is running iOS 16.0 or later</li>
+                <li>Try closing the app completely and reopening it</li>
+                <li>Restart your device</li>
+                <li>Check if there's an app update available in the App Store</li>
+                <li>If problems persist, try deleting and reinstalling the app (note: this will reset your progress)</li>
+            </ul>
+
+            <h3>No sound or music</h3>
+            <ul>
+                <li>Check that your device isn't in Silent Mode (check the side switch)</li>
+                <li>Go to Settings in the app and make sure Sound and Music are enabled</li>
+                <li>Check your device volume</li>
+            </ul>
+
+            <h3>Game is running slowly</h3>
+            <ul>
+                <li>Close other apps running in the background</li>
+                <li>Restart your device to free up memory</li>
+                <li>Make sure you have enough storage space on your device</li>
+            </ul>
+
+            <h3>Progress not saving</h3>
+            <ul>
+                <li>Make sure you're completing levels (reaching victory or game over)</li>
+                <li>Don't force-close the app while playing</li>
+                <li>Check that your device has available storage</li>
+            </ul>
+        </div>
+
+        <!-- System Requirements -->
+        <div class="card">
+            <h2>System Requirements</h2>
+            <div class="requirements">
+                <p><strong>Minimum iOS Version:</strong> iOS 16.0 or later</p>
+                <p><strong>Compatible Devices:</strong> iPhone</p>
+                <p><strong>Storage:</strong> Approximately 100 MB</p>
+                <p><strong>Internet:</strong> Not required</p>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div class="card">
+            <h2>Additional Information</h2>
+            <p>Review our policies and legal information:</p>
+            <div class="links">
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <p style="margin-top: 20px; color: #888; font-size: 0.9rem;">
+                App Version: 1.0<br>
+                Last Updated: February 2026
+            </p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Bloopy. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
