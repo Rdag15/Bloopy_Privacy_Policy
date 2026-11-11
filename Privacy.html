@@ -112,23 +112,24 @@
         </header>
 
         <div class="card">
-            <p><strong>Last Updated:</strong> August 2026</p>
+            <p><strong>Last Updated:</strong> November 2026</p>
 
             <h2>Overview</h2>
             <p>Bloopy ("the App") is a mobile game developed for iOS devices. This Privacy Policy explains what information is involved when you use the App, who handles it, and what choices you have.</p>
 
             <div class="highlight">
-                <strong>The Short Version:</strong> We do not run any servers and we do not receive your personal information. Your game progress stays on your device. The App does show ads, which are served by Google and may involve your device's advertising identifier &mdash; you control that in iOS Settings. If you are signed in to Game Center, your scores are sent to Apple's leaderboards.
+                <strong>The Short Version:</strong> We do not run any servers of our own, and we never receive your name, email address or Apple ID. Your game progress stays on your device. From version 3.0, Bloopy sends anonymous gameplay statistics to an analytics service so that we can improve the game. The App does show ads, which are served by Google and may involve your device's advertising identifier &mdash; you control that in iOS Settings. If you are signed in to Game Center, your scores are sent to Apple's leaderboards.
             </div>
         </div>
 
         <div class="card">
             <h2>Who Handles Your Information</h2>
-            <p>Bloopy has no backend. The App makes no network requests to any server operated by us, and we have no way to see, collect, or store your personal information.</p>
-            <p>Three other parties are involved when you play:</p>
+            <p>Bloopy has no backend of its own. The App makes no network requests to any server operated by us. What we do receive, from version 3.0, is anonymous gameplay statistics, through the analytics service described below. They are not linked to your name, Apple ID or Game Center account.</p>
+            <p>Four other parties are involved when you play:</p>
             <ul>
                 <li><strong>Google</strong> &mdash; serves the ads in the App.</li>
                 <li><strong>Apple</strong> &mdash; handles Game Center leaderboards and any purchase you make.</li>
+                <li><strong>PostHog</strong> &mdash; receives the anonymous gameplay statistics (version 3.0 and later).</li>
                 <li><strong>Your device</strong> &mdash; stores your progress locally.</li>
             </ul>
             <p>Each is described below.</p>
@@ -136,29 +137,48 @@
 
         <div class="card">
             <h2>Advertising</h2>
-            <p>Bloopy displays banner ads and optional rewarded video ads (which you may choose to watch in exchange for an extra ball). These are provided by <strong>Google AdMob</strong>.</p>
+            <p>Bloopy displays banner ads and optional rewarded video ads (which you may choose to watch in exchange for an in-game reward, such as an extra ball). These are provided by <strong>Google AdMob</strong>.</p>
             <p>To serve ads, Google may collect and process:</p>
             <ul>
                 <li>Your device's advertising identifier (IDFA)</li>
                 <li>Advertising data, such as which ads were shown and interacted with</li>
                 <li>Product interaction data, such as app usage events used to optimise ad delivery</li>
                 <li>Crash and performance diagnostics from the advertising SDK</li>
+                <li>Your approximate location, which Google works out from your IP address</li>
             </ul>
             <p><strong>Personalised ads and your permission.</strong> The first time you play, iOS asks whether Bloopy may track you across apps and websites. If you decline, ads are still shown but are <em>non-personalised</em> &mdash; they are not based on your advertising identifier. You can change this at any time in <em>iOS Settings &rsaquo; Privacy &amp; Security &rsaquo; Tracking</em>.</p>
-            <p><strong>If you are in the EU, EEA, or UK</strong>, Bloopy presents a consent form provided by Google before ads are personalised, and you can reopen your choices at any time from the <em>Privacy Options</em> row in the App's Settings screen.</p>
+            <p><strong>If you are in the EEA, the UK or Switzerland</strong>, Bloopy presents a consent form provided by Google before ads are personalised, and you can reopen your choices at any time from the <em>Privacy Options</em> row in the App's Settings screen.</p>
             <p>Google's handling of this data is governed by its own privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. You can read how Google uses data from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
         </div>
 
         <div class="card">
-            <h2>Remove Ads Subscription</h2>
-            <p>Bloopy offers an optional auto-renewable yearly subscription that removes ads. The purchase is processed entirely by Apple through your App Store account.</p>
-            <p>We never see or receive your payment details, billing address, or Apple ID. We only receive, from Apple, the fact that an active subscription exists on your device so the App knows to stop showing ads.</p>
-            <p>You can view, change, or cancel the subscription in <em>iOS Settings &rsaquo; your name &rsaquo; Subscriptions</em>. Purchases are governed by Apple's terms and privacy policy.</p>
+            <h2>Analytics</h2>
+            <p>From version 3.0, Bloopy sends anonymous gameplay statistics to <strong>PostHog</strong>, an analytics service, using its servers in the EU (Frankfurt). Earlier versions send none. We use the statistics to find levels that are too hard, where players stop, and which features people use. They include:</p>
+            <ul>
+                <li>App opens, including opens from one of Bloopy's reminders</li>
+                <li>Level starts, wins and losses (the level, the power-up, attempts, stars, score, oranges left and time taken)</li>
+                <li>Tutorial progress, daily-challenge progress and streaks</li>
+                <li>Rewarded-video offers and whether you accept them</li>
+                <li>Taps on Remove Ads, and whether you bought it</li>
+                <li>Coins you earn, and what you buy with them in the in-game shop</li>
+                <li>Resetting your progress</li>
+                <li>When the game's picture freezes, and whether it came back by itself or asked you to reopen Bloopy</li>
+            </ul>
+            <p>PostHog also receives your device model, iOS version, app version, screen size, language, time zone and connection type. Each install gets a random identifier. It is not linked to your name, Apple ID, Game Center account or advertising identifier, and it is not used for advertising or to track you across apps. We do not sell this data. Your IP address is used only to deliver the data. It is not stored, and your location is not worked out from it. PostHog keeps the data for one year.</p>
+            <p><strong>If you are in the EEA, the UK or Switzerland</strong>, nothing is sent unless you agree in the privacy message shown when you first open Bloopy. You can change your choice at any time from the <em>Privacy Options</em> row in the App's Settings screen.</p>
+            <p>PostHog's handling of this data is governed by its own privacy policy: <a href="https://posthog.com/privacy">posthog.com/privacy</a>.</p>
+        </div>
+
+        <div class="card">
+            <h2>Remove Ads</h2>
+            <p>From version 3.0, Bloopy offers an optional one-time purchase that removes the banner ads. Optional rewarded videos, which you choose to watch, remain available. The purchase is processed entirely by Apple through your App Store account.</p>
+            <p>Earlier versions offered a yearly subscription instead. If you bought it, it keeps working and renewing until you cancel it. You can view or cancel it in <em>iOS Settings &rsaquo; your name &rsaquo; Subscriptions</em>.</p>
+            <p>We never see or receive your payment details, billing address, or Apple ID. We only receive, from Apple, the fact that the purchase or an active subscription exists on your device, so the App knows to stop showing banner ads. The anonymous statistics described under Analytics record that a purchase was made, not who made it. Purchases are governed by Apple's terms and privacy policy.</p>
         </div>
 
         <div class="card">
             <h2>Game Center</h2>
-            <p>If you are signed in to Game Center, Bloopy submits your scores to Apple's leaderboards so they can be compared with other players. This is the one case where game data leaves your device at our request.</p>
+            <p>If you are signed in to Game Center, Bloopy submits your scores to Apple's leaderboards so they can be compared with other players. Apart from the anonymous statistics described under Analytics, this is the only case where game data leaves your device at our request.</p>
             <p>What is submitted is a score value associated with your Game Center player. We do not receive your Game Center identity, and we store nothing about you ourselves. Leaderboard data is handled by Apple under its privacy policy.</p>
             <p>You can stop this by signing out of Game Center in <em>iOS Settings &rsaquo; Game Center</em>.</p>
         </div>
@@ -172,7 +192,7 @@
                 <li><strong>Custom levels</strong> &mdash; any levels you create in the level editor</li>
                 <li><strong>Cosmetics and coins</strong> &mdash; items unlocked through play</li>
             </ul>
-            <p>This data is held in iOS's standard UserDefaults system and the App's Documents directory. It is not transmitted to us, and it is removed when you delete the App. Note that custom levels you deliberately share &mdash; for example by AirDrop or the Files app &mdash; leave your device because you chose to send them.</p>
+            <p>This data is held in iOS's standard UserDefaults system and the App's Documents directory. Apart from the anonymous statistics described under Analytics, it is not transmitted to us, and it is removed when you delete the App. Note that custom levels you deliberately share &mdash; for example by AirDrop, the Files app or a link &mdash; leave your device because you chose to send them. A shared link carries the level inside the link itself; our website does not receive or store it.</p>
         </div>
 
         <div class="card">
@@ -186,7 +206,7 @@
             <ul>
                 <li><strong>Turn off ad tracking</strong> &mdash; iOS Settings &rsaquo; Privacy &amp; Security &rsaquo; Tracking</li>
                 <li><strong>Reset your advertising identifier</strong> &mdash; the same Settings screen</li>
-                <li><strong>Reconsider ad consent (EU/EEA/UK)</strong> &mdash; the Privacy Options row in the App's Settings</li>
+                <li><strong>Reconsider ad and analytics consent (EEA, UK, Switzerland)</strong> &mdash; the Privacy Options row in the App's Settings</li>
                 <li><strong>Leave Game Center</strong> &mdash; iOS Settings &rsaquo; Game Center</li>
                 <li><strong>Remove all local data</strong> &mdash; delete the App</li>
                 <li><strong>Ask us anything</strong> &mdash; using the contact details below</li>
@@ -195,7 +215,7 @@
 
         <div class="card">
             <h2>Data Security</h2>
-            <p>Game data stored on your device is protected by iOS's standard application sandbox and by whatever device passcode or biometric protection you have enabled. Data handled by Google and Apple is protected under their respective security practices.</p>
+            <p>Game data stored on your device is protected by iOS's standard application sandbox and by whatever device passcode or biometric protection you have enabled. Data handled by Google, Apple and PostHog is protected under their respective security practices.</p>
         </div>
 
         <div class="card">
